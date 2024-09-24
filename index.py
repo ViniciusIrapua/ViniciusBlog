@@ -22,11 +22,22 @@ def home():
 def contacts():
 
     page = {
-        'title': 'Biscoito',
+        'title': 'contatos',
         'css': 'home.css',
     }
 
     return render_template('contacts.html', page = page)
+
+
+@app.route('/about')
+def about():
+
+    page = {
+        'title': 'sobre',
+        'css': 'home.css',
+    }
+
+    return render_template('about.html', page = page)
 
 if __name__ == '__main__':
     app.run(debug=True)
