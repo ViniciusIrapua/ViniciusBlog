@@ -9,6 +9,14 @@
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quas suscipit beatae. Culpa ea facilis distinctio
     ullam quibusdam voluptate at, fugit officia, totam ipsum numquam ipsa dicta, vero voluptas dolor!</p>
 
+    
+
+    <ul>
+        {% for coisa in page.coisas %}
+        <li>{{ coisa }}</li>
+        {% endfor %}
+    </ul>
+
 {% endblock %}
 
 {% block aside %}
